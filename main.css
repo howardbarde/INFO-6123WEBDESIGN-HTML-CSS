@@ -34,14 +34,27 @@ li a, .smudgeLeft {
 
 #home {
     background-color: #F7DF7D;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #furParents {
     text-align: center;
 }
 
+#how {
+    padding-left: 70%;
+}
+
+
+.parentName, #furParents {
+    font-family: Meow3;
+    font-size: 32px;
+}
+
 #hows {
     mix-blend-mode: darken;
+    width: 90%;
 }
 
 .howard {
@@ -49,7 +62,7 @@ li a, .smudgeLeft {
     float: right;
 }
 video, .emily {
-    width: 30%;
+    width: 40%;
     float: left;
     margin-right: 3%;
     margin-top: 1%;
@@ -148,10 +161,39 @@ video, .emily {
     font-family: 'Meow2'; /*a name to be used later*/
     src: url(fonts/CuteMeow-51Pra.otf);
 }
+
+@font-face {
+    font-family: 'Meow3'; /*a name to be used later*/
+    src: url(fonts/HimalayanCat-0WMAz.otf);
+}
+
+@font-face {
+    font-family: 'Meow4'; /*a name to be used later*/
+    src: url(fonts/KiddosyfreeRegular-GOEag.otf);
+}
+
 .smudge {
     font-family: Meow;
     color: white;
-    font-size: 34px;
+    font-size: 20px;
+}
+
+.timeLineIntro {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.phFlag {
+    width: 28%;
+}
+
+.canadaFlag {
+    width: 30%;
+}
+
+.meow3 {
+    font-family: Meow3;
+    font-size: 24px;
 }
 
 /* header {
@@ -180,6 +222,12 @@ footer {
     flex-direction: column;
 }
 
+.smudgeSide {
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
 @media screen and (min-width: 900px){
     /* header {
         background-image: url(img/smudgeIcon.jpg), url(img/test.jpg);
@@ -189,6 +237,19 @@ footer {
     /* header {
         height: 20%;
     } */
+    .smudge {
+        font-family: Meow;
+        color: white;
+        font-size: 34px;
+    }
+
+    #hows {
+        width: 50%;
+    }
+    
+    video {
+        width: 30%;
+    }
 
     .test {
         float: right;
@@ -207,6 +268,10 @@ footer {
 
     #icon {
         float: right;
+    }
+
+    #how {
+        padding-left: 55%;
     }
 
     /* li a {
@@ -263,26 +328,51 @@ footer {
         text-align: center;
         align-items: center;
     }
+    .picturesTab {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: DodgerBlue;
+    }
+
+    .picturesTab > div {
+        background-color: #f1f1f1;
+        width: 100%;
+        /* margin: 10px; */
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+    .picturesTab > img {
+        width: 20%;
+    }
+
+    .headerPic {
+        grid-template-areas: headerPic;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row: 4;
+    }
 
     .group_sub0pic1 {
         grid-template-areas: sub0pic1;
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row: 4;
+        grid-row: 5;
     }
 
     .group_sub0pic2 {
         grid-template-areas: sub0pic2;
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row: 4;
+        grid-row: 5;
     }
 
     .group_sub0pic3 {
         grid-template-areas: sub0pic3;
         grid-column-start: 3;
         grid-column-end: 3;
-        grid-row: 4;
+        grid-row: 5;
     }
 
     .group1_sub1 {
@@ -301,8 +391,8 @@ footer {
 
     .group1_sub3 {
         grid-template-areas: sub3;
-        grid-column: 2;
-        grid-row: 5;
+        grid-column: 3;
+        grid-row: 4;
     }
 
     .table {
@@ -324,7 +414,7 @@ footer {
     .table th {
         padding-top: 12px;
         padding-bottom: 12px;
-        background-color: #DFC184;
+        background-color: #EBCB2A;
         color: white;
       }
 
@@ -438,8 +528,8 @@ footer {
         width: 100%;
     }
 
-    .meow2 {
-        font-family: Meow2;
+    .meow3 {
+        font-family: Meow3;
         font-size: 36px;
     }
 
@@ -453,6 +543,24 @@ footer {
         width: 7%;
     }
 
+    .smudgeSide {
+        width: 100%;
+    }
+
+    #history {
+        background-color: #55AEB6;
+        color: white;
+    }
+
+    #facts {
+        background-color: #EBCB2A;
+        color: white;
+    }
+
+    #emi {
+        padding-bottom: 1%;
+        display: block;
+    }
     .design-section {
         display: flex;
         flex-direction: column;
@@ -480,7 +588,7 @@ footer {
       
       .timeline-content {
         padding: 20px;
-        background: #F7DF7D;
+        background: #EBCB2A;
         -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
                 box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
         border-radius: 5px;
@@ -497,6 +605,9 @@ footer {
         margin: 0px 20px 20px 20px;
       }
       
+      .timeline-component img {
+        width: 50%;
+      }
       .timeLineIntro {
         text-align: center;
         padding-bottom: 3%;
@@ -527,4 +638,78 @@ footer {
                   transform: translateX(-50%);
         }
     
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            margin: 0;
+            font-family: Arial;
+          }
+          
+          .header {
+            text-align: center;
+            padding: 32px;
+          }
+          
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            padding-bottom: 1%;
+          }
+          
+          /* Create four equal columns that sits next to each other */
+          .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+          }
+
+        .contactContainer {
+            text-align: center;
+            background-color: #55AEB6;
+        }
+
+        .conHeader {
+            font-family: Meow4;
+            font-size: 32px;
+            color: white;
+        }
+
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+        input[type=submit]:hover {
+            background-color: #45a049;
+          }
+          
+        .contactUsForm {
+            border-radius: 5px;
+            background-color: #F7DF7D;
+            padding: 20px;
+        }
 }

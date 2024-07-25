@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howard's project</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <ul>
+          <li class="smudgeLeft smudge">Smudge</li>
+          <li class="navLeft"><a class="smudge active" href="#">Contact Us</a></li>
+          <li class="navLeft"><a class="smudge" href="#">Home</a></li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <img class="coverSmudge" src="img/SmudgeCover2.png">
+        </div>
+        <section class="contactContainer">
+            <h2 class="conHeader">CONTACT US</h2>
+            <div class="contactUsForm">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
