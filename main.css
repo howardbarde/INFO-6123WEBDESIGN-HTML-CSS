@@ -682,7 +682,17 @@ footer {
             color: white;
         }
 
-        input[type=text], select {
+        form {
+            text-align: center;
+            align-items: center;
+        }
+
+        .contactUsForm {
+            width: 50%;
+            align-items: center;
+        }
+
+        input[type=text], textarea {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -690,11 +700,15 @@ footer {
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
-          }
+        }
+
+        ::placeholder {
+            text-align: center; 
+         }
           
         input[type=submit] {
             width: 100%;
-            background-color: #4CAF50;
+            background-color: #E0B0FF;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
@@ -704,7 +718,7 @@ footer {
           }
           
         input[type=submit]:hover {
-            background-color: #45a049;
+            background-color: #ddd;
           }
           
         .contactUsForm {
@@ -712,4 +726,5 @@ footer {
             background-color: #F7DF7D;
             padding: 20px;
         }
+        
 }
