@@ -21,26 +21,26 @@
         <section class="contactContainer">
             <h2 class="conHeader">CONTACT US</h2>
             <div class="contactUsForm">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <form action="redirect.php" method="get">
+                    <label class="required" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." pattern="[A-Za-z]+" title="Letters only" required>
                 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                
-                    <label for="fname">Phone number</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="number">Phone number</label>
+                    <input type="text" id="number" name="number" placeholder="Your phone number.." pattern="[0-9]+" title="Only digits">
 
-                    <label for="fname">Email</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email..">
 
-                    <label for="fname">Message</label>
-                    <textarea id="instructions" name="instructions" rows="10" cols="50"></textarea>
-
+                    <label class="required" for="message">Message</label>
+                    <textarea id="instructions" name="message" rows="10" cols="50" placeholder="Your message.." required></textarea>
+                    
                     <input type="submit" value="Submit">
                 </form>
             </div>
         </section>
+        <footer>
+            <p>&copy; Copyright 2024 <span class="smudge">Smudge</span></p>
+        </footer>
     </main>
 </body>
 </html>
