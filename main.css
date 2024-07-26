@@ -89,8 +89,7 @@ video, .emily {
 .timeline-content {
     padding: 20px;
     background: #55AEB6;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
     border-radius: 5px;
     color: white;
     padding: 1.75rem;
@@ -130,8 +129,7 @@ video, .emily {
     height: 15px;
     border-radius: 50%;
     background-image: linear-gradient(45deg, #EBCB2A, #EBCB2A, #EBCB2A);
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 #history {
@@ -191,11 +189,14 @@ video, .emily {
 }
 
 .phFlag {
-    width: 28%;
+    width: 25%;
+    text-align: center;
+    margin : 0 auto;
 }
 
 .canadaFlag {
     width: 30%;
+    margin : 0 auto;
 }
 
 .meow3 {
@@ -320,8 +321,7 @@ input[type=submit]:hover {
 .timeline-content {
     padding: 20px;
     background: #EBCB2A;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
-            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
     border-radius: 5px;
     color: black;
     padding: 1.75rem;
@@ -370,8 +370,7 @@ input[type=submit]:hover {
     height: 15px;
     border-radius: 50%;
     background-image: linear-gradient(45deg, white, white, white);
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 @media screen and (min-width: 900px){
@@ -431,7 +430,7 @@ input[type=submit]:hover {
     
     .group1_main {
         display: grid;
-        grid-template-columns: (1fr, 1fr, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         margin-bottom: 5em;
     }
@@ -443,59 +442,19 @@ input[type=submit]:hover {
         height: 100%;
     }
 
-    .group_sub0 {
-        grid-template-areas: sub0;
-        grid-column: 2;
-        grid-column-end: 3;
-        grid-row: 2;
-        text-align: center;
-        align-items: center;
-    }
-
-    .headerPic {
-        grid-template-areas: headerPic;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row: 4;
-    }
-
-    .group_sub0pic1 {
-        grid-template-areas: sub0pic1;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row: 5;
-    }
-
-    .group_sub0pic2 {
-        grid-template-areas: sub0pic2;
-        grid-column-start: 2;
-        grid-column-end: 2;
-        grid-row: 5;
-    }
-
-    .group_sub0pic3 {
-        grid-template-areas: sub0pic3;
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row: 5;
-    }
-
     .group1_sub1 {
-        grid-template-areas: sub1;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row: 3;
     }
 
     .group1_sub2 {
-        grid-template-areas: sub2;
         grid-column: 3;
         grid-row: 3;
         padding-top: 4%;
     }
 
     .group1_sub3 {
-        grid-template-areas: sub3;
         grid-column: 3;
         grid-row: 4;
     }
@@ -540,79 +499,6 @@ input[type=submit]:hover {
         text-align: center;
         align-items: center;
     }
-
-    .carousel {
-        position: relative;
-        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    }
-    
-    .carousel-inner {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 800px;
-        /* background-color: #00b3b3; */
-    }
-    
-    .carousel-open:checked + .carousel-item {
-        position: static;
-        opacity: 100;
-    }
-    
-    .carousel-item {
-        position: absolute;
-        opacity: 0;
-        -webkit-transition: opacity 0.6s ease-out;
-        transition: opacity 0.6s ease-out;
-    }
-    
-    .carousel-item img {
-        display: block;
-        width: 100%;
-        height: 900px;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .carousel-control {
-        background: rgba(0, 0, 0, 0.28);
-        border-radius: 50%;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-        font-size: 40px;
-        height: 40px;
-        line-height: 35px;
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        cursor: pointer;
-        -ms-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        text-align: center;
-        width: 40px;
-        z-index: 10;
-    }
-    
-    .carousel-control.prev {
-        left: 2%;
-    }
-    
-    .carousel-control.next {
-        right: 2%;
-    }
-    
-    .carousel-control:hover {
-        background: rgba(0, 0, 0, 0.8);
-        color: #aaaaaa;
-    }
-    
-    #carousel-1:checked ~ .control-1,
-    #carousel-2:checked ~ .control-2,
-    #carousel-3:checked ~ .control-3 {
-        display: block;
-    }
       
     li {
         float: left;
@@ -636,19 +522,22 @@ input[type=submit]:hover {
 
     .meow3 {
         font-family: Meow3;
-        font-size: 36px;
+        font-size: 24px;
     }
-
+    
     .canadaFlag {
         padding-top: 1%;
         padding-left: 1%;
         width: 10%;
-        position: static;
+    }
+
+    .journeyCa {
+        margin: 0 auto;
     }
 
     .phFlag {
-        width: 7%;
-        padding-right: 1%;
+        width: 10%;
+        padding-bottom: 1%;
     }
 
     .smudgeSide {
@@ -700,8 +589,7 @@ input[type=submit]:hover {
       .timeline-content {
         padding: 20px;
         background: #EBCB2A;
-        -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
-                box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
+        box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
         border-radius: 5px;
         color: black;
         padding: 1.75rem;
@@ -745,8 +633,7 @@ input[type=submit]:hover {
           height: 15px;
           border-radius: 50%;
           background-image: linear-gradient(45deg, white, white, white);
-          -webkit-transform: translateX(-50%);
-                  transform: translateX(-50%);
+          transform: translateX(-50%);
         }
     
         * {
