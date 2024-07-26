@@ -141,6 +141,19 @@ video, .emily {
     justify-content: center;
     align-items: center;
 } */
+#history {
+    background-color: #55AEB6;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#facts {
+    background-color: #EBCB2A;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+}
 
 .logo {
     margin-top: 2%;
@@ -286,6 +299,91 @@ input[type=submit]:hover {
     color: white;
 }
 
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.table tr:nth-child(even){background-color: #f2f2f2;}
+  
+.table tr:hover {background-color: #ddd;}
+  
+.table th {
+
+    background-color: #EBCB2A;
+    color: white;
+}
+.timeline-component {
+    text-align: center;
+}
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .timeline-content {
+    padding: 20px;
+    background: #EBCB2A;
+    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
+            box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #55AEB6;
+    border-radius: 5px;
+    color: black;
+    padding: 1.75rem;
+    transition: 0.4s ease;
+    overflow-wrap: break-word !important;
+    margin: 1rem;
+    margin-bottom: 20px;
+    border-radius: 6px;
+  }
+  
+  .timeline-component {
+    margin: 0px 20px 20px 20px;
+  }
+  
+  .timeline-component img {
+    width: 50%;
+  }
+  .timeLineIntro {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3%;
+  }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: 1fr 3px 1fr;
+    }
+    .timeline-middle {
+      position: relative;
+      background-image: linear-gradient(45deg, white, white, white);
+      width: 3px;
+      height: 100%;
+    }
+    .main-middle {
+      opacity: 0;
+    }
+    .timeline-circle {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-image: linear-gradient(45deg, white, white, white);
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
 @media screen and (min-width: 900px){
     /* header {
         background-image: url(img/smudgeIcon.jpg), url(img/test.jpg);
@@ -295,6 +393,13 @@ input[type=submit]:hover {
     /* header {
         height: 20%;
     } */
+    ol {
+        padding-bottom: 200px;
+    }
+    
+    #grooming {
+        padding-top: 30%;
+    }
     .smudge {
         font-family: Meow;
         color: white;
@@ -474,7 +579,7 @@ input[type=submit]:hover {
         padding-bottom: 12px;
         background-color: #EBCB2A;
         color: white;
-      }
+    }
 
     .group_sub0pic1, .group_sub0pic2, .group_sub0pic3 {
         border-style: solid;
@@ -593,12 +698,14 @@ input[type=submit]:hover {
 
     .canadaFlag {
         padding-top: 1%;
+        padding-left: 1%;
         width: 10%;
         position: static;
     }
 
     .phFlag {
         width: 7%;
+        padding-right: 1%;
     }
 
     .smudgeSide {
@@ -635,14 +742,17 @@ input[type=submit]:hover {
         justify-content: center;
       }
       
-      .timeline {
+    .timeline-component {
+        text-align: center;
+    }
+    .timeline {
         width: 80%;
         height: auto;
         max-width: 800px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-      }
+    }
       
       .timeline-content {
         padding: 20px;
@@ -727,6 +837,7 @@ input[type=submit]:hover {
           .column img {
             margin-top: 8px;
             vertical-align: middle;
+            width: 100%;
           }
 
         .contactContainer {
