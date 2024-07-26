@@ -50,7 +50,7 @@ li a, .smudgeLeft {
 }
 
 .howard {
-    width: 30%;
+    width: 40%;
     float: right;
 }
 
@@ -141,7 +141,7 @@ video, .emily {
 
 #facts {
     background-color: #EBCB2A;
-    color: white;
+    color: black;
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -207,7 +207,9 @@ video, .emily {
 .column > img {
     margin-top: 8px;
     vertical-align: middle;
-    width: 100%;
+    width: 98%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .timelineOuter {
@@ -373,7 +375,22 @@ input[type=submit]:hover {
     transform: translateX(-50%);
 }
 
+.henlo {
+    font-family: Meow2;
+    font-size: 30px;
+}
+
 @media screen and (min-width: 900px){
+    .howard {
+        width: 30%;
+        float: right;
+        padding-left: 1%;
+    }
+
+    .henlo {
+        font-family: Meow2;
+        font-size: 30px;
+    }
 
     ol {
         padding-bottom: 200px;
@@ -459,12 +476,15 @@ input[type=submit]:hover {
         grid-row: 4;
     }
 
+    table {
+        padding-right: 20px;
+    }
     .table {
         margin-left: auto;
         margin-right: auto;
         border-collapse: collapse;
         width: 100%;
-        padding-right: 10px;
+        padding-right: 20px;
     }
 
     .table td, .table th {
@@ -551,7 +571,7 @@ input[type=submit]:hover {
 
     #facts {
         background-color: #EBCB2A;
-        color: white;
+        color: black;
     }
 
     #emi {
