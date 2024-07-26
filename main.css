@@ -214,12 +214,15 @@ video, .emily {
 
 .timelineOuter {
     background-color: #55AEB6;
+    margin: 2%;
 }
+
 footer {
     background-color: #55AEB6;
     text-indent: 2%;
     display: flex;
     flex-direction: column;
+    margin-top: 1%;
 }
 
 .smudgeSide {
@@ -278,6 +281,7 @@ input[type=submit]:hover {
 .contactContainer {
     text-align: center;
     background-color: #55AEB6;
+    margin: 2%;
 }
 
 .conHeader {
@@ -290,7 +294,7 @@ input[type=submit]:hover {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
-    width: 100%;
+    width: 97%;
 }
 
 .table td, .table th {
@@ -378,6 +382,10 @@ input[type=submit]:hover {
 .henlo {
     font-family: Meow2;
     font-size: 30px;
+}
+
+.group1_main {
+    margin: 2%;
 }
 
 @media screen and (min-width: 900px){
@@ -476,14 +484,11 @@ input[type=submit]:hover {
         grid-row: 4;
     }
 
-    table {
-        padding-right: 20px;
-    }
     .table {
         margin-left: auto;
         margin-right: auto;
         border-collapse: collapse;
-        width: 100%;
+        width: 95%;
         padding-right: 20px;
     }
 
@@ -526,11 +531,12 @@ input[type=submit]:hover {
     
     li a:hover:not(.active) {
         background-color: #EBCB2A;
-      }
+    }
       
       .active {
         background-color: #EBCB2A;
-      }
+    }
+
     .navLeft {
         float: right;
         padding-right: 3%;
